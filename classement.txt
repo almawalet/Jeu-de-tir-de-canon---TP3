@@ -1,0 +1,3 @@
+Alma,20
+Tina,10
+Atta,0
