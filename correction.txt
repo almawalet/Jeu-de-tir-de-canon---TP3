@@ -1,5 +1,5 @@
 Numéro d'équipe :
-Lien vers le dépôt GitHub PRIVÉ de votre TP :
+Lien vers le dépôt GitHub PRIVÉ de votre TP : https://github.com/almawalet/EQUIPE30-IFT1004-TP3-A24.git
 Avez-vous invité les correcteurs comme collaborateurs à votre dépôt GitHub (Oui/Non) : Oui
 
 Étudiant 1 :
