@@ -48,21 +48,26 @@ class Classement:
 
             [('John', 100), ('Bob', 50), ('Alice', 30), ('Charlie', 10), ('Eve', 0)]
         """
-        with open(self.nom_fichier, "r") as fichier:
-                liste_tuple = []
-                if fichier is []:
-                    return []
-                else:
-                    for ligne in fichier:
-                        ligne = ligne.strip().split(",")
-                        try:
-                            nom = ligne[0]
-                            score = int(ligne [1])
-                        except IndexError:
-                            return []
-                        liste_tuple.append((nom, score))
-                    liste_tuple = sorted(liste_tuple, key=lambda x: x[1], reverse=True)[:10] #copier de la methode enregistrer_score
-                    return liste_tuple
+        try:
+            with open(self.nom_fichier, "r") as fichier:
+                    liste_tuple = []
+                    if fichier is []:
+                        return []
+                    else:
+                        for ligne in fichier:
+                            ligne = ligne.strip().split(",")
+                            try:
+                                nom = ligne[0]
+                                score = int(ligne [1])
+                            except IndexError:
+                                return []
+                            liste_tuple.append((nom, score))
+                        liste_tuple = sorted(liste_tuple, key=lambda x: x[1], reverse=True)[:10] #copier de la methode enregistrer_score
+                        return liste_tuple
+        except FileNotFoundError:
+            with open(self.nom_fichier, "w") as fichier:
+                pass
+            return []
 
     def enregistrer_score(self, nom, score):
         """Enregistre un nouveau score dans le classement.
