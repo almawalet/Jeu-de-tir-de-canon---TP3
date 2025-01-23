@@ -5,12 +5,17 @@ Le joueur contrôle un canon et doit viser et tirer pour atteindre une cible. Le
 
 Fonctionnalités :
 
-🎮 Contrôle du canon avec des entrées utilisateur (par exemple, angle et puissance).
+🎮 Contrôle du canon avec des entrées utilisateur (angle et puissance).
+
 🎯 Génération aléatoire de la position de la cible.
-📈 Système de score basé sur le nombre de tirs.
-🖥️ Interface graphique (optionnelle, selon le projet).
+
+📈 Système de score basé sur le nombre de tirs (3 tirs possibles par essaie).
+
+🖥️ Interface graphique (avec Tkinter).
+
 🔄 Possibilité de rejouer après chaque partie.
-Technologies Utilisées
+
+Technologies Utilisées :
 
 Langage : Python
 
