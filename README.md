@@ -26,3 +26,5 @@ math -- pour les calculs.
 random -- pour la génération aléatoire de la cible.
 
 tkinter : pour l’interface graphique.
+
+etc.
